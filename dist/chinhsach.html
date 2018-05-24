@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Bui Thien Ai</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendors.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+
+    <meta property="og:title" content="Gulp Frontend Boilerplate"/>
+    <meta property="og:url" content="http://domain.tld"/>
+    <meta property="og:image" content="http://domain.tld/static/share.png"/>
+    <meta property="og:site-name" content="Gulp Frontend Boilerplate"/>
+    <meta property="og:description" content="An ES6 boilerplate with common frontend tasks using Gulp 4 as build system."/>
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@domain">
+    <meta name="twitter:creator" content="@domain">
+    <meta name="twitter:title" content="Gulp Frontend Boilerplate">
+    <meta name="twitter:description" content="An ES6 boilerplate with common frontend tasks using Gulp 4 as build system.">
+    <meta name="twitter:image" content="https://domain.tld/static/twitter.png">
+    
+    <meta name="theme-color" content="#eeeeee">
+    <meta name="msapplication-navbutton-color" content="#eeeeee">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#eeeeee">
+    
+
+    <link rel="yandex-tableau-widget" href="images/favicon/yandex-browser-manifest.json">
+    <link rel="icon" type="image/png" sizes="228x228" href="images/favicon/coast-228x228.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Gulp Frontend Boilerplate">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="transparent">
+    <meta name="application-name" content="Gulp Frontend Boilerplate">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="transparent">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="images/favicon/apple-touch-startup-image-320x460.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="images/favicon/apple-touch-startup-image-640x920.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="images/favicon/apple-touch-startup-image-640x1096.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="images/favicon/apple-touch-startup-image-750x1294.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="images/favicon/apple-touch-startup-image-1182x2208.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="images/favicon/apple-touch-startup-image-1242x2148.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="images/favicon/apple-touch-startup-image-748x1024.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="images/favicon/apple-touch-startup-image-768x1004.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="images/favicon/apple-touch-startup-image-1496x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="images/favicon/apple-touch-startup-image-1536x2008.png">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+    <header id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li> 
+                            <a href="/">Trang chủ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">Chủ đầu tư
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">Villas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">Chính sách
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="images/bai-bien-nhan-tao-sunrise-bay.jpg" class="" alt="Vanesea Field">
+    </div>
+
+    <div class="chinhsach">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="title-web">Chính sách bán hàng</h1>
+            </div>
+            
+            <h3>Chính sách hỗ trợ vay vốn ngân hàng</h3>
+            <p>Khách hàng ngay khi đăng ký sở hữu biệt thự tại Vanesea Field sẽ được chủ đầu tư và ngân hàng chỉ định hỗ trợ đặc biệt trong việc vay vốn ngân hàng:</p>
+            <ul>
+            	<li>Hỗ trợ lãi suất 0% tới thời điểm nhận biệt thự</li>
+            	<li>Ân hạn nỡ gốc trong suốt thời gian ưu đãi lãi suất</li>
+            	<li>Miễn phí trả nợ trước hạn trong thời gian ưu đãi lãi suất</li>
+            </ul>
+
+            <h3>Cam kết lợi nhuận tại Vanesea Field</h3>
+            <p>Ngay khi khách hàng ký hợp đồng mua biệt thự tại tổ hợp biệt thự nghỉ dưỡng Vanesea Field quý khách đồng thời ký cam kết lợi nhuận với chủ đầu tư:</p>
+            <ul>
+            	<li>Cam kết lợi nhuận 10% trong 10 năm trên giá bán biệt thự</li>
+            	<li>Ưu đãi 15 đêm nghỉ dưỡng tại dự án và có thể quy đổi sang các tổ hợp dự án khác do MBLand Holdings phát triển</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+        	<div class="logo-mobile">
+        		<img src="images/logo-text.webp" class="logo-text" alt="Vanesea Field">
+        	</div>
+    
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="title-contact hidden-xs">Liên hệ tư vấn</h2>
+                    <ul>
+                        <li>Nhân viên tư vấn: Nguyễn Văn Phước</li>
+                        <li>Địa chỉ: 256 Nguyễn Công Trứ, Đà Nẵng</li>
+                        <li>Email: boanku@gmail.com</li>
+                        <li>Hotline: <a href="tel:+84903796851" class="call">0903 79 68 51</a></li>
+                    </ul>
+                    <img src="images/logo-text.webp" class="logo-text hidden-xs" alt="Vanesea Field">
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="title-contact">Đăng ký nhận tài liệu</h2>
+                    <p class="description">Xin vui lòng để lại địa chỉ email, chúng tôi sẽ cập nhật những tin tức quan trọng của Vanesea Field tới quý khách</p>
+    
+                    <div class="form-group">
+                        <input type="text" class="form-control input-text" name="name" placeholder="Họ và tên">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-text" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-text" name="phone" placeholder="Số điện thoại">
+                    </div>
+                    <div class="action-xs">
+                    	<button class="btn btn-dangki">Đăng kí</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="topbutton"></a>
+
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- // @include inc/_analytics.html -->
+</body>
+
+</html>

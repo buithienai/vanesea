@@ -1,0 +1,437 @@
+$color-web: #428bca;
+$color-black: #000;
+$color-white: #fff;
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+
+@mixin transition($transition, $function) {
+    -webkit-transition: all $transition $function;
+    -moz-transition: all $transition $function;
+    -ms-transition: all $transition $function;
+    -o-transition: all $transition $function;
+    transition: all $transition $function;
+}
+
+
+body {
+    font-family: 'Open-Sans', sans-serif !important;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    @include transition(0.3s, ease);
+
+    @media screen and (min-width: 767px) {
+        min-height: 75px !important;
+    }
+
+    .navbar-toggle {
+        border-radius: 0;
+    }
+}
+
+.fixed-theme { 
+    .navbar {
+        min-height: 50px !important;
+    }
+
+    .navbar-nav {
+        margin-top: 0px !important;
+    }
+
+    .navbar-brand {
+        padding: 5px 15px;
+
+        img {
+            height: 40px;
+        }
+    }
+}
+
+.navbar-default {
+
+    background: rgba(255, 255, 255, .9) !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+
+    a.navbar-brand {
+        @include transition(0.3s, ease);
+
+        img {
+            height: 50px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 5px 15px;
+
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        margin-top: 12px;
+        float: right !important;
+        position: relative;
+        @include transition(0.3s, ease);
+
+        @media screen and (max-width: 767px) {
+            margin-top: 0px;
+            float: none !important;
+            text-align: center;
+        }
+    }
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 18px;
+    color: $color-web !important;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 15px;
+    }
+}
+
+/*.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    background: $color-web !important;
+    color: $color-white !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
+    background: $color-web !important;
+    color: $color-white !important;
+}*/
+
+#myCarousel {
+    position: relative;
+
+    .content-banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: bold;
+            font-size: 60px;
+            letter-spacing: 2px;
+
+
+            @media screen and (max-width: 767px) {
+                font-size: 40px;
+            }
+        }
+
+        .btn-download {
+            padding: 15px 30px;
+            background: #428bca;
+            font-size: 18px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            color: #fff;
+
+            @media screen and (max-width: 767px) {
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+.w40 {
+    width: 40px;
+}
+
+.topbutton {
+    height: 45px;
+    width: 45px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+    background: rgba(51,51,51,0.8) url('../images/cd-top-arrow.svg') no-repeat center 50%;
+    background-repeat: no-repeat;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.pdtb10 {
+    padding: 10px 0px;
+}
+
+.mt0 {
+    margin-top: 0px;
+}
+
+.title-web {
+    text-transform: uppercase;
+    color: $color-web;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100px;
+        height: 1px;
+        background: $color-web;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text {
+    margin: 10px auto;
+    line-height: 1.5;
+    max-width: 80%;
+
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+
+.about {
+    padding: 20px 0px;
+    .wrapp {
+        overflow: hidden;
+        border: 1px solid $color-web;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+
+        .images-about {
+            width: 100%;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+}
+
+.location {
+    padding: 20px 0px;
+
+    .images-location {
+        border: 1px solid $color-web;
+
+        img {
+            width: 100%
+        }
+    }
+}
+
+.overflow {
+    ul {
+        list-style: none;
+        -webkit-padding-start: 0px;
+
+        li {
+            padding: 8px;
+            border-bottom: 1px solid rgba(214, 210, 210, 0.5);
+        }
+    }
+}
+
+.matbang {
+  padding: 20px 0px 0px;
+
+    .tab-frame {
+      margin-bottom: 30px;
+
+        input {
+          display:none;
+        }
+
+        label {
+            display:block;
+            float:left;
+            padding:5px 10px;
+            cursor:pointer;
+            width:33.3%;
+            text-transform:uppercase;
+            text-align:center;
+            padding:10px 0;
+            border:2px solid;
+            background:gray;
+            color:white;
+        }
+
+        .tab {
+            display:none;
+            padding:5px 10px;
+            clear:left;
+        }
+    }
+}
+
+.matbang .tab-frame input:checked + label {
+  background:$color-web;
+  color:white;
+  cursor:default;
+}
+
+.matbang .tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+.matbang .tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+.matbang .tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
+  display:block;
+}
+
+.utilities {
+    padding: 20px 10px;
+    text-align: center;
+
+    .why {
+
+        img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 1px;
+                background: #bfbfbf;
+            }
+
+        }
+    }
+}
+
+.contact {
+    padding: 20px 0px;
+    background: #3f4850;
+    color: #fff;
+
+    .logo-mobile {
+        display: none;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .title-contact {
+        font-weight: bold;
+        margin-top: 0px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
+    .description {
+        margin: 20px 0px;
+    }
+
+    .action-xs {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+    .btn-dangki {
+        color: $color-web;
+        background: #fff;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &:hover {
+            color: $color-web;
+        }
+    }
+
+    ul {
+        list-style: none;
+        -webkit-padding-start: 0px;
+
+        li {
+            padding: 8px;
+            border-bottom: 1px solid rgba(214, 210, 210, 0.5);
+        }
+    }
+
+    .call {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .logo-text {
+        width: 50%;
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+.partner {
+    padding: 20px 0px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    .images-partner {
+        width: 60%;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .item {
+        margin-bottom: 10px;
+    }
+}
+
+.chinhsach {
+    padding: 20px 0px;
+
+    h3 {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Bui Thien Ai</title>
+
+    <!-- @if ENV='dev' -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendors.css">
+    <!-- @endif -->
+    <!-- @if ENV='prod' -->
+    <link rel="stylesheet" href="styles/vendors.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <!-- @endif -->
+
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+
+    <!-- @include inc/_meta.html -->
+
+    <!-- @include inc/_favicons.html -->
+</head>
+
+<body>
+    <!-- @include inc/_browserhappy.html -->
+
+    <!-- @include inc/_menu.html -->
+
+    <div class="banner">
+        <img src="images/bai-bien-nhan-tao-sunrise-bay.jpg" class="" alt="Vanesea Field">
+    </div>
+
+    <div class="chinhsach">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="title-web">Chính sách bán hàng</h1>
+            </div>
+            
+            <h3>Chính sách hỗ trợ vay vốn ngân hàng</h3>
+            <p>Khách hàng ngay khi đăng ký sở hữu biệt thự tại Vanesea Field sẽ được chủ đầu tư và ngân hàng chỉ định hỗ trợ đặc biệt trong việc vay vốn ngân hàng:</p>
+            <ul>
+            	<li>Hỗ trợ lãi suất 0% tới thời điểm nhận biệt thự</li>
+            	<li>Ân hạn nỡ gốc trong suốt thời gian ưu đãi lãi suất</li>
+            	<li>Miễn phí trả nợ trước hạn trong thời gian ưu đãi lãi suất</li>
+            </ul>
+
+            <h3>Cam kết lợi nhuận tại Vanesea Field</h3>
+            <p>Ngay khi khách hàng ký hợp đồng mua biệt thự tại tổ hợp biệt thự nghỉ dưỡng Vanesea Field quý khách đồng thời ký cam kết lợi nhuận với chủ đầu tư:</p>
+            <ul>
+            	<li>Cam kết lợi nhuận 10% trong 10 năm trên giá bán biệt thự</li>
+            	<li>Ưu đãi 15 đêm nghỉ dưỡng tại dự án và có thể quy đổi sang các tổ hợp dự án khác do MBLand Holdings phát triển</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- @include inc/_footer.html -->
+
+    <a href="#" class="topbutton"></a>
+
+    <!-- @if ENV='dev' -->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- @endif -->
+    <!-- @if ENV='prod' -->
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+    <!-- @endif -->
+
+    <!-- // @include inc/_analytics.html -->
+</body>
+
+</html>
