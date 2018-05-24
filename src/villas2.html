@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Vanesea Field</title>
+
+    <!-- @if ENV='dev' -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendors.css">
+    <!-- @endif -->
+    <!-- @if ENV='prod' -->
+    <link rel="stylesheet" href="styles/vendors.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <!-- @endif -->
+
+    <!-- @include inc/_meta.html -->
+
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+    <!-- @include inc/_browserhappy.html -->
+
+    <!-- @include inc/_menu.html -->
+
+    <div class="banner">
+        <img src="images/bai-bien-nhan-tao-sunrise-bay.jpg" class="" alt="Vanesea Field">
+    </div>
+
+    <div class="villas">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="title-web">Villas 2</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- @include inc/_footer.html -->
+
+    <a href="#" class="topbutton"></a>
+
+    <!-- @if ENV='dev' -->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- @endif -->
+    <!-- @if ENV='prod' -->
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+    <!-- @endif -->
+
+    <!-- // @include inc/_analytics.html -->
+</body>
+
+</html>
