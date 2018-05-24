@@ -26,15 +26,14 @@
   ],
   "license": "MIT",
   "vendorCss": [
-    "./bower_components/bootstrap/dist/css/bootstrap-tagsinput.css",
     "./bower_components/bootstrap/dist/css/bootstrap.min.css",
-    "./bower_components/font-awesome/css/font-awesome.min.css"
+    "./bower_components/font-awesome/css/font-awesome.min.css",
+    "./bower_components/toastr/toastr.css"
   ],
   "vendors": [
     "./bower_components/jquery/dist/jquery.min.js",
     "./bower_components/bootstrap/dist/js/bootstrap.min.js",
-    "./bower_components/bootstrap/dist/js/bootstrap-tagsinput.js",
-    "./bower_components/bootstrap/dist/js/jquery-ui.custom.min.js"
+    "./bower_components/toastr/toastr.min.js"
   ],
   "fonts": [
     "./bower_components/bootstrap/fonts/*.*",
