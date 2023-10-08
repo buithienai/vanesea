@@ -87,7 +87,7 @@
 		"imagemin-pngquant": "^5.0.x",
 		"minimist": "^1.2.x",
 		"napa": "^2.3.x",
-		"postcss": "^5.2.4",
+		"postcss": "^8.4.31",
 		"pretty-hrtime": "^1.0.x",
 		"psi": "^2.0.x",
 		"stylelint": "^7.3.1",
